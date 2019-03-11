@@ -1,19 +1,19 @@
 {
-  "name": "language-todo",
-  "version": "0.29.4",
-  "description": "TODO/FIXME highlighting support in Atom",
+  "name": "language-todo-plus",
+  "version": "0.1.1",
+  "description": "Fork from language-todo, add in personal touch",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-todo",
+  "homepage": "#",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-todo.git"
+    "url": "#"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-todo/issues"
+    "url": "#"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"

@@ -1,8 +1,15 @@
 'scopeName': 'text.todo'
-'injectionSelector': 'comment, text.plain'
+'injectionSelector': 'comment, text.plain, text.tex.latex'
 'patterns': [
   {
-    'match': '(?<!\\w)@?(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE|WARNING)\\b'
+    'match': '<(TODO|IDEA|REVIEW|REVISION):?(.*?)>',
+    'name': 'storage.type.class.${1:/downcase}'
+    'captures':
+      '2':
+        'name':'storage.type.class.${1:/downcase}.test'
+  }
+  {
+    'match': '(?<![\\w<])@?(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE|WARNING)\\b'
     'name': 'storage.type.class.${1:/downcase}'
   }
   {
